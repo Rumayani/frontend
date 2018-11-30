@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Button from 'shared_components/Button';
-import CoinbaseCommerceButton from 'react-coinbase-commerce';
-import 'react-coinbase-commerce/dist/coinbase-commerce-button.css';
+//import CoinbaseCommerceButton from 'react-coinbase-commerce';
+//import 'react-coinbase-commerce/dist/coinbase-commerce-button.css';
 import axios from 'libs/axios';
 import history from 'main/history';
 
@@ -80,14 +80,14 @@ class CoinbaseButtonContainer extends Component {
         >
           <strong>Pay with Cryptocurrency</strong>
         </Button>
-        <CoinbaseCommerceButton
+        {/*<CoinbaseCommerceButton
           style={displayNone}
           id={coinbaseButtonDomID}
           chargeId={this.state.chargeId}
           onChargeSuccess={this.onChargeSuccess}
           onChargeFailure={msgData => console.log('onChargeFailure', msgData)}
           onModalClosed={this.onModalClosed}
-        />
+        />*/}
         <Text>
           *Currencies accepted:{' '}
           <strong>Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), Bitcoin Cash (BCH)</strong>

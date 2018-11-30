@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Loader } from 'semantic-ui-react';
 import Button from 'shared_components/Button';
-import CoinbaseCommerceButton from 'react-coinbase-commerce';
-import 'react-coinbase-commerce/dist/coinbase-commerce-button.css';
+//import CoinbaseCommerceButton from 'react-coinbase-commerce';
+//import 'react-coinbase-commerce/dist/coinbase-commerce-button.css';
 import axios from 'libs/axios';
 
 const buttonStates = {
@@ -67,14 +67,14 @@ class CoinbaseButtonContainer extends Component {
             'Buy Tokens'
           )}
         </Button>
-        <CoinbaseCommerceButton
+        {/*<CoinbaseCommerceButton
           style={displayNone}
           id={coinbaseButtonDomID}
           chargeId={this.state.chargeId}
           onChargeSuccess={this.onChargeSuccess}
           onChargeFailure={msgData => console.log('onChargeFailure', msgData)}
           onModalClosed={this.onModalClosed}
-        />
+        />*/}
       </React.Fragment>
     );
   }
